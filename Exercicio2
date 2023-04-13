@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int a, b, auxiliar, n;
+
+    a = 0;
+    b = 1;
+    
+    printf("Digite um número: ");
+    scanf("%d", &n);
+    
+    
+   while(n>auxiliar){
+       auxiliar = a + b;
+        a = b;
+        b = auxiliar;
+
+        printf("%d\n", auxiliar);
+   }
+   if(n == 0 || n == 1 || n == auxiliar){
+       printf("Pertence a sequencia de Fibonacci");
+   }else{
+       printf("Não pertence a sequencia de Fibonacci");
+   }
+}
